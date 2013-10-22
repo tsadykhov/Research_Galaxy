@@ -1,6 +1,6 @@
 *.sw*
 *~
-build/
-bin/
-node_modules/
-vendor/
+client/build/
+client/bin/
+client/node_modules/
+client/vendor/
