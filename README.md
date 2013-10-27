@@ -1,4 +1,4 @@
-# [Research Galaxy](http://tsadykhov.github.com/Research_Galaxy) [](http://media02.hongkiat.com/ww-space-galaxy-wallpapers/Andromeda-Galaxy.jpg)
+# [Research Galaxy](http://researchgalaxy.com)
 
 Our objective is to connect researchers to the resources they need. Whether you are an accomplished researcher or an avid fan stargazing at home, we want you to continue your search for the incredible.
 
