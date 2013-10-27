@@ -1,6 +1,6 @@
-# [ngBoilerplate](http://joshdmiller.github.com/ng-boilerplate) [![Build Status](https://travis-ci.org/joshdmiller/ng-boilerplate.png?branch=master)](https://travis-ci.org/joshdmiller/ng-boilerplate)
+# [Research Galaxy](http://tsadykhov.github.com/Research_Galaxy) [http://media02.hongkiat.com/ww-space-galaxy-wallpapers/Andromeda-Galaxy.jpg)](http://media02.hongkiat.com/ww-space-galaxy-wallpapers/Andromeda-Galaxy.jpg)
 
-An opinionated kickstarter for [AngularJS](http://angularjs.org) projects.
+Our objective is to connect researchers to the resources they need. Whether you are an accomplished researcher or an avid fan stargazing at home, we want you to continue your search for the incredible.
 
 ***
 
