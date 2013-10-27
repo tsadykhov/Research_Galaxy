@@ -1,5 +1,5 @@
-angular.module( 'ngBoilerplate.about', [
-  'ui.state',
+angular.module( 'researchGalaxy.about', [
+  'ui.router',
   'placeholders',
   'ui.bootstrap'
 ])

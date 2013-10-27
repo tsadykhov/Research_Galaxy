@@ -4,15 +4,15 @@
   "version": "0.0.1",
   "homepage": "",
   "licenses": {},
-  "bugs": "https://github.com/joshdmiller/ng-boilerplate/issues",
+  "bugs": "https://github.com/tsadykhov/Research_Galaxy/issues",
   "repository": {
     "type": "git",
-    "url": "git@github.com:joshdmiller/ng-boilerplate.git"
+    "url": "git@github.com:tsadykhov/Research_Galaxy.git"
   },
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-recess": "~0.3.0",
+    "grunt-recess": "~0.4.0",
     "grunt-contrib-clean": "~0.4.1",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-jshint": "~0.4.3",

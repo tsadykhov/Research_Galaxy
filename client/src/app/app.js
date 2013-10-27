@@ -1,10 +1,9 @@
-angular.module( 'ngBoilerplate', [
+angular.module( 'researchGalaxy', [
   'templates-app',
   'templates-common',
-  'ngBoilerplate.home',
-  'ngBoilerplate.about',
-  'ui.state',
-  'ui.route'
+  'researchGalaxy.home',
+  'researchGalaxy.about',
+  'ui.router'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
@@ -17,9 +16,31 @@ angular.module( 'ngBoilerplate', [
 .controller( 'AppCtrl', function AppCtrl ( $scope, $location ) {
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
     if ( angular.isDefined( toState.data.pageTitle ) ) {
-      $scope.pageTitle = toState.data.pageTitle + ' | ngBoilerplate' ;
+      $scope.pageTitle = 'Research Galaxy - ' + toState.data.pageTitle  ;
     }
   });
+})
+
+.directive("divWithGutter", function(){
+  return{
+    restrict: 'AE',
+    transclude: true,
+    templateUrl: 'directives/div-with-gutter.tpl.html'
+  };
+})
+
+.directive("projectsSection", function(){
+  return{
+    restrict: 'AE',
+    templateUrl: 'directives/projects-section.tpl.html'
+  };
+})
+
+.directive("projectCard", function(){
+  return{
+    restrict: 'AE',
+    templateUrl: 'directives/project-card.tpl.html'
+  };
 })
 
 ;

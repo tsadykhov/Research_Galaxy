@@ -1,38 +1,35 @@
 .jumbotron {
-  margin: 40px 0 80px 0;
-  text-align: center;
+  .make-row();
 
-  h1 {
-    margin-bottom: 20px;
-    font-size: 55px;
-    line-height: 1;
-  }
-
-  .lead {
-    font-size: 24px;
+  margin-top: -15px;
+  margin-bottom: 0px;
+  background-color: @jumbotronBackgroundColor;
+  
+  .mission-statement {
+    .make-lg-column(9);
+    margin-bottom: 40px;
+    font-size: 22px;
     line-height: 1.25;
   }
 
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
+  .log-in {
+    .make-lg-column(3);
+    max-width: 230px;
+    height: 230px;
+    border: 1px solid @gray-lighter;
+    padding: 10px;
+    background-color: white;
+
+    h4 {
+      text-align: center;
+    }
+
+    input {
+      margin-bottom: 3px;
+    }
+
+    button {
+      margin-top: 7px;
+    }
   }
 }
-
-.marketing {
-  .row {
-    margin-bottom: 10px;
-  }
-
-  .row:last-child {
-    margin-bottom: 0;
-  }
-  
-  h4 [class*=" icon-"], h4 [class^="icon-"] {
-    margin-right: 5px;
-    vertical-align: -10%;
-    font-size: 28px;
-    line-height: 1;
-  }
-}
-

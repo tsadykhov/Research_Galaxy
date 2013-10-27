@@ -12,7 +12,7 @@
  * The dependencies block here is also where component dependencies should be
  * specified, as shown below.
  */
-angular.module( 'researchGalaxy.home', [
+angular.module( 'researchGalaxy.navbar', [
   'ui.router'
 ])
 
@@ -22,18 +22,11 @@ angular.module( 'researchGalaxy.home', [
  * this way makes each module more "self-contained".
  */
 .config(function config( $stateProvider ) {
-  $stateProvider.state( 'home', {
-    url: '/home',
+  $stateProvider.state( 'navbar', {
     views: {
-      "jumbotron": {
-        templateUrl: 'home/home.tpl.html'
-      },
-      "navbar": {
+      "main": {
+        controller: 'navbarCtrl',
         templateUrl: 'navbar/navbar.tpl.html'
-      },
-      "editor-picks-projects": {
-        controller: 'ProjectCtrl',
-        templateUrl: 'directives/projects-section.tpl.html'
       }
     },
     data:{ pageTitle: 'Home' }
@@ -43,25 +36,7 @@ angular.module( 'researchGalaxy.home', [
 /**
  * And of course we define a controller for our route.
  */
-.controller ('ProjectCtrl', function ProjectsController($scope) {
-  $scope.projects = [
-    {
-      'name': 'Test project 1',
-      'description': 'Test description'
-    },
-    {
-      'name': 'Test project 2',
-      'description': 'Test description'
-    },
-    {
-      'name': 'Test project 3',
-      'description': 'Test description'
-    },
-    {
-      'name': 'Test project 4',
-      'description': 'Test description'
-    }
-  ];
+.controller( 'HomeCtrl', function HomeController( $scope ) {
 })
 
 ;
