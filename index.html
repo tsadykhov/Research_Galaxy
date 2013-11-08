@@ -1,71 +1,462 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Research galaxy by tsadykhov</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <title>Research galaxy by tsadykhov</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
+    <header>
+      <div class="inner">
         <h1>Research galaxy</h1>
-        <p>Connecting those who discover.</p>
+        <h2>Connecting those who discover.</h2>
+        <a href="https://github.com/tsadykhov/Research_Galaxy" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
 
-        <p class="view"><a href="https://github.com/tsadykhov/Research_Galaxy">View the Project on GitHub <small>tsadykhov/Research_Galaxy</small></a></p>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="research-galaxy" class="anchor" href="#research-galaxy"><span class="octicon octicon-link"></span></a><a href="http://researchgalaxy.com">Research Galaxy</a>
+</h1>
 
+<p>Our objective is to connect researchers to the resources they need. Whether you are an accomplished researcher or an avid fan stargazing at home, we want you to continue your search for the incredible.</p>
 
-        <ul>
-          <li><a href="https://github.com/tsadykhov/Research_Galaxy/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/tsadykhov/Research_Galaxy/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/tsadykhov/Research_Galaxy">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<hr><h2>
+<a name="quick-start" class="anchor" href="#quick-start"><span class="octicon octicon-link"></span></a>Quick Start</h2>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>Install Node.js and then:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<div class="highlight highlight-sh"><pre><span class="nv">$ </span>git clone git://github.com/joshdmiller/ng-boilerplate
+<span class="nv">$ </span><span class="nb">cd </span>ng-boilerplate
+<span class="nv">$ </span>sudo npm -g install grunt-cli karma bower
+<span class="nv">$ </span>npm install
+<span class="nv">$ </span>bower install
+<span class="nv">$ </span>grunt watch
+</pre></div>
+
+<p>Finally, open <code>file:///path/to/ng-boilerplate/build/index.html</code> in your browser.</p>
+
+<p>Happy hacking!</p>
+
+<h2>
+<a name="purpose" class="anchor" href="#purpose"><span class="octicon octicon-link"></span></a>Purpose</h2>
+
+<p><code>ngBoilerplate</code> is designed to make life easy by providing a basic framework
+with which to kickstart AngularJS projects. It contains a best-practice
+directory structure to ensure code reusability and maximum scalability.
+ngBoilerplate also comes prepackaged with the most popular design frameworks
+around: <a href="http://getbootstrap.com">Twitter Bootstrap</a>,
+<a href="http://angular-ui.github.io">Angular UI</a>,
+<a href="http://angular-ui.github.io/bootstrap">Angular Bootstrap</a>,
+<a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a>, and
+<a href="http://lesscss.org">LESS</a>. Lastly, it contains a sophisticated
+<a href="http://gruntjs.org">Grunt</a>-based build system to ensure maximum productivity.
+All you have to do is clone it and start coding!</p>
+
+<h2>
+<a name="philosophy" class="anchor" href="#philosophy"><span class="octicon octicon-link"></span></a>Philosophy</h2>
+
+<p>The principal goal of <code>ngBoilerplate</code> is to set projects up for long-term
+success.  So <code>ngBoilerplate</code> tries to follow best practices everywhere it can.
+These are:</p>
+
+<ul>
+<li>Properly orchestrated modules to encourage drag-and-drop component re-use.</li>
+<li>Tests exist alongside the component they are testing with no separate <code>test</code>
+directory required; the build process should be sophisticated enough to handle
+this.</li>
+<li>Speaking of which, the build system should work automagically, without
+involvement from the developer. It should do what needs to be done, while
+staying out of the way. Components should end up tested, linted, compiled,
+and minified, ready for use in a production environment.</li>
+<li>Integration with popular tools like Bower, Karma, and LESS.</li>
+<li>
+<em>Encourages</em> test-driven development. It's the only way to code.</li>
+<li>A directory structure that is cogent, meaningful to new team members, and
+supporting of the above points.</li>
+<li>Well-documented, to show new developers <em>why</em> things are set up the way they
+are.</li>
+<li>It should be responsive to evidence. Community feedback is therefore crucial
+to the success of <code>ngBoilerplate</code>.</li>
+</ul><p>But <code>ngBoilerplate</code> is not an example of an AngularJS app: this is a
+kickstarter. If you're looking for an example of what a complete, non-trivial
+AngularJS app that does something real looks like, complete with a REST backend
+and authentication and authorization, then take a look at
+<a href="http://github.com/angular-app/angular-app"><code>angular-app</code></a>, which does just
+that - and does it well.</p>
+
+<h2>
+<a name="learn" class="anchor" href="#learn"><span class="octicon octicon-link"></span></a>Learn</h2>
+
+<h3>
+<a name="overall-directory-structure" class="anchor" href="#overall-directory-structure"><span class="octicon octicon-link"></span></a>Overall Directory Structure</h3>
+
+<p>At a high level, the structure looks roughly like this:</p>
+
+<pre><code>ng-boilerplate/
+  |- grunt-tasks/
+  |- karma/
+  |- src/
+  |  |- app/
+  |  |  |- &lt;app logic&gt;
+  |  |- assets/
+  |  |  |- &lt;static files&gt;
+  |  |- common/
+  |  |  |- &lt;reusable code&gt;
+  |  |- less/
+  |  |  |- main.less
+  |- vendor/
+  |  |- angular-bootstrap/
+  |  |- bootstrap/
+  |  |- placeholders/
+  |- .bowerrc
+  |- bower.json
+  |- build.config.js
+  |- Gruntfile.js
+  |- module.prefix
+  |- module.suffix
+  |- package.json
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>What follows is a brief description of each entry, but most directories contain
+their own <code>README.md</code> file with additional documentation, so browse around to
+learn more.</p>
+
+<ul>
+<li>
+<code>karma/</code> - test configuration.</li>
+<li>
+<code>src/</code> - our application sources. <a href="src/README.md">Read more »</a>
+</li>
+<li>
+<code>vendor/</code> - third-party libraries. <a href="http://bower.io">Bower</a> will install
+packages here. Anything added to this directory will need to be manually added
+to <code>build.config.js</code> and <code>karma/karma-unit.js</code> to be picked up by the build
+system.</li>
+<li>
+<code>.bowerrc</code> - the Bower configuration file. This tells Bower to install
+components into the <code>vendor/</code> directory.</li>
+<li>
+<code>bower.json</code> - this is our project configuration for Bower and it contains the
+list of Bower dependencies we need.</li>
+<li>
+<code>build.config.js</code> - our customizable build settings; see "The Build System"
+below.</li>
+<li>
+<code>Gruntfile.js</code> - our build script; see "The Build System" below.</li>
+<li>
+<code>module.prefix</code> and <code>module.suffix</code> - our compiled application script is
+wrapped in these, which by default are used to place the application inside a
+self-executing anonymous function to ensure no clashes with other libraries.</li>
+<li>
+<code>package.json</code> - metadata about the app, used by NPM and our build script. Our
+NPM dependencies are listed here.</li>
+</ul><h3>
+<a name="detailed-installation" class="anchor" href="#detailed-installation"><span class="octicon octicon-link"></span></a>Detailed Installation</h3>
+
+<p>This section provides a little more detailed understanding of what goes into
+getting <code>ngBoilerplate</code> up and running. Though <code>ngBoilerplate</code> is really simple
+to use, it might help to have an understanding of the tools involved here, like
+Node.js and Grunt and Bower. If you're completely new to highly organized,
+modern JavaScript development, take a few short minutes to read <a href="tools.md">this overview
+of the tools</a> before continuing with this section.</p>
+
+<p>Okay, ready to go? Here it is:</p>
+
+<p><code>ngBoilerplate</code> uses <a href="http://gruntjs.org">Grunt</a> as its build system, so
+<a href="http://nodejs.org">Node.js</a> is required. Also, Grunt by default no longer comes
+with a command-line utility and Karma and Bower must end up in your global path
+for the build system to find it, so they must be installed independently. Once
+you have Node.js installed, you can simply use <code>npm</code> to make it all happen:</p>
+
+<div class="highlight highlight-sh"><pre><span class="nv">$ </span>npm -g install grunt-cli karma bower
+</pre></div>
+
+<p>If you're on Linux (like I am) then throw <code>sudo</code> in front of that command.  If
+you're on Windows, then you're on your own.</p>
+
+<p>Next, you can either clone this repository using Git, download it as a zip file
+from GitHub, or merge the branch into your existing repository. Assuming you're
+starting from scratch, simply clone this repository using git:</p>
+
+<div class="highlight highlight-sh"><pre><span class="nv">$ </span>git clone git://github.com/joshdmiller/ng-boilerplate my-project-name
+<span class="nv">$ </span><span class="nb">cd </span>my-project-name
+</pre></div>
+
+<p>And then install the remaining build dependencies locally:</p>
+
+<div class="highlight highlight-sh"><pre><span class="nv">$ </span>npm install
+</pre></div>
+
+<p>This will read the <code>dependencies</code> (empty by default) and the <code>devDependencies</code>
+(which contains our build requirements) from <code>package.json</code> and install
+everything needed into a folder called <code>node_modules/</code>.</p>
+
+<p>There are many Bower packages used by <code>ngBoilerplate</code>, like Twitter Bootstrap
+and Angular UI, which are listed in <code>bower.js</code>. To install them into the
+<code>vendor/</code> directory, simply run:</p>
+
+<div class="highlight highlight-sh"><pre><span class="nv">$ </span>bower install
+</pre></div>
+
+<p>In the future, should you want to add a new Bower package to your app, run the
+<code>install</code> command:</p>
+
+<div class="highlight highlight-sh"><pre><span class="nv">$ </span>bower install packagename --save-dev
+</pre></div>
+
+<p>The <code>--save-dev</code> flag tells Bower to add the package at its current version to
+our project's <code>bower.js</code> file so should another developer download our
+application (or we download it from a different computer), we can simply run the
+<code>bower install</code> command as above and all our dependencies will be installed for
+us. Neat!</p>
+
+<p>Technically, <code>ngBoilerplate</code> is now ready to go.</p>
+
+<p>However, prior to hacking on your application, you will want to modify the
+<code>package.json</code> file to contain your project's information. Do not remove any
+items from the <code>devDependencies</code> array as all are needed for the build process
+to work.</p>
+
+<p>To ensure your setup works, launch grunt:</p>
+
+<div class="highlight highlight-sh"><pre><span class="nv">$ </span>grunt watch
+</pre></div>
+
+<p>The built files are placed in the <code>build/</code> directory by default. Open the
+<code>build/index.html</code> file in your browser and check it out! Because everything is
+compiled, no XHR requests are needed to retrieve templates, so until this needs
+to communicate with your backend there is no need to run it from a web server.</p>
+
+<p><code>watch</code> is actually an alias of the <code>grunt-contrib-watch</code> that will first run a
+partial build before watching for file changes. With this setup, any file that
+changes will trigger only those build tasks necessary to bring the app up to
+date. For example, when a template file changes, the templates are recompiled
+and concatenated, but when a test/spec file changes, only the tests are run.
+This allows the watch command to complete in a fraction of the time it would
+ordinarily take.</p>
+
+<p>In addition, if you're running a Live Reload plugin in your browser (see below),
+you won't even have to refresh to see the changes! When the <code>watch</code> task detects
+a file change, it will reload the page for you. Sweet.</p>
+
+<p>When you're ready to push your app into production, just run the <code>compile</code>
+command:</p>
+
+<div class="highlight highlight-sh"><pre><span class="nv">$ </span>grunt compile
+</pre></div>
+
+<p>This will concatenate and minify your sources and place them by default into the
+<code>bin/</code> directory. There will only be three files: <code>index.html</code>,
+<code>your-app-name.js</code>, and <code>your-app-name.css</code>. All of the vendor dependencies like
+Bootstrap styles and AngularJS itself have been added to them for super-easy
+deploying. If you use any assets (<code>src/assets/</code>) then they will be copied to
+<code>bin/</code> as is.</p>
+
+<p>Lastly, a complete build is always available by simply running the default
+task, which runs <code>build</code> and then <code>compile</code>:</p>
+
+<div class="highlight highlight-sh"><pre><span class="nv">$ </span>grunt
+</pre></div>
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="the-build-system" class="anchor" href="#the-build-system"><span class="octicon octicon-link"></span></a>The Build System</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>The best way to learn about the build system is by familiarizing yourself with
+Grunt and then reading through the heavily documented build script,
+<code>Gruntfile.js</code>. But you don't need to do that to be very productive with
+<code>ngBoilerplate</code>. What follows in this section is a quick introduction to the
+tasks provided and should be plenty to get you started.</p>
+
+<p>The driver of the process is the <code>delta</code> multi-task, which watches for file
+changes using <code>grunt-contrib-watch</code> and executes one of nine tasks when a file
+changes:</p>
+
+<ul>
+<li>
+<code>delta:gruntfile</code> - When <code>Gruntfile.js</code> changes, this task runs the linter
+(<code>jshint</code>) on that one file and reloads the configuration.</li>
+<li>
+<code>delta:assets</code> - When any file within <code>src/assets/</code> changes, all asset files
+are copied to <code>build/assets/</code>.</li>
+<li>
+<code>delta:html</code> - When <code>src/index.html</code> changes, it is compiled as a Grunt
+template, so script names, etc., are dynamically replaced with the correct
+values configured dynamically by Grunt.</li>
+<li>
+<code>delta:less</code> - When any <code>*.less</code> file within <code>src/</code> changes, the
+<code>src/less/main.less</code> file is linted and copied into
+<code>build/assets/ng-boilerplate.css</code>.</li>
+<li>
+<code>delta:jssrc</code> - When any JavaScript file within <code>src/</code> that does not end in
+<code>.spec.js</code> changes, all JavaScript sources are linted, all unit tests are run,
+and the all source files are re-copied to <code>build/src</code>.</li>
+<li>
+<code>delta:coffeesrc</code> - When any <code>*.coffee</code> file in <code>src/</code> that doesn't match
+<code>*.spec.coffee</code> changes, the Coffee scripts are compiled independently into
+<code>build/src</code> in a structure mirroring where they were in <code>src/</code> so it's easy to
+locate problems. For example, the file
+<code>src/common/titleService/titleService.coffee</code> is compiled to
+<code>build/src/common/titleService/titleService.js</code>.</li>
+<li>
+<code>delta:tpls</code> - When any <code>*.tpl.html</code> file within <code>src/</code> changes, all templates
+are put into strings in a JavaScript file (technically two, one for
+<code>src/common/</code> and another for <code>src/app/</code>) that will add the template to
+AngularJS's
+<a href="http://docs.angularjs.org/api/ng.%24templateCache"><code>$templateCache</code></a> so
+template files are part of the initial JavaScript payload and do not require
+any future XHR.  The template cache files are <code>build/template-app.js</code> and
+<code>build/template-common.js</code>.</li>
+<li>
+<code>delta:jsunit</code> - When any <code>*.spec.js</code> file in <code>src/</code> changes, the test files
+are linted and the unit tests are executed.</li>
+<li>
+<code>delta:coffeeunit</code> - When any <code>*.spec.coffee</code> file in <code>src/</code> changes, the test
+files are linted, compiled their tests executed.</li>
+</ul><p>As covered in the previous section, <code>grunt watch</code> will execute a full build
+up-front and then run any of the aforementioned <code>delta:*</code> tasks as needed to
+ensure the fastest possible build. So whenever you're working on your project,
+start with:</p>
+
+<div class="highlight highlight-sh"><pre><span class="nv">$ </span>grunt watch
+</pre></div>
+
+<p>And everything will be done automatically!</p>
 
 <h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<a name="build-vs-compile" class="anchor" href="#build-vs-compile"><span class="octicon octicon-link"></span></a>Build vs. Compile</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>To make the build even faster, tasks are placed into two categories: build and
+compile. The build tasks (like those we've been discussing) are the minimal
+tasks required to run your app during development.</p>
+
+<p>Compile tasks, however, get your app ready for production. The compile tasks
+include concatenation, minification, compression, etc. These tasks take a little
+bit longer to run and are not at all necessary for development so are not called
+automatically during build or watch.</p>
+
+<p>To initiate a full compile, you simply run the default task:</p>
+
+<div class="highlight highlight-sh"><pre><span class="nv">$ </span>grunt
+</pre></div>
+
+<p>This will perform a build and then a compile. The compiled site - ready for
+uploading to the server! - is located in <code>bin/</code>, taking a cue from
+traditional software development. To test that your full site works as
+expected, open the <code>bin/index.html</code> file in your browser. Voila!</p>
 
 <h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<a name="live-reload" class="anchor" href="#live-reload"><span class="octicon octicon-link"></span></a>Live Reload!</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p><code>ngBoilerplate</code> also includes <a href="http://livereload.com/">Live Reload</a>, so you no
+longer have to refresh your page after making changes! You need a Live Reload
+browser plugin for this:</p>
+
+<ul>
+<li>Chrome - <a href="https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei">Chrome Webstore</a>
+</li>
+<li>Firefox - <a href="http://download.livereload.com/2.0.8/LiveReload-2.0.8.xpi">Download from Live Reload</a>
+</li>
+<li>Safari - <a href="http://download.livereload.com/2.0.9/LiveReload-2.0.9.safariextz">Download from Live Reload</a>
+</li>
+<li>Internet Explorer - Surely you jest.</li>
+</ul><p>Note that if you're using the Chrome version with <code>file://</code> URLs (as is the
+default with <code>ngBoilerplate</code>) you need to tell Live Reload to allow it. Go to
+<code>Menu -&gt; Tools -&gt; Extensions</code> and check the "Allow access to file URLs" box next
+to the Live Reload plugin.</p>
+
+<p>When you load your page, click the Live Reload icon in your toolbar and
+everything should work magically. w00t!</p>
+
+<p>If you'd prefer to not install a browser extension, then you must add the
+following to the end of the <code>body</code> tag in <code>index.html</code>:</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://localhost:35729/livereload.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<p>Boom!</p>
+
+<h2>
+<a name="roadmap" class="anchor" href="#roadmap"><span class="octicon octicon-link"></span></a>Roadmap</h2>
+
+<p>This is a project that is not broad in scope, so there's not really much of a
+wish list here. But I would like to see a couple of things:</p>
+
+<p>I'd like it to be a little simpler. I want this to be a universal starting
+point. If someone is starting a new AngularJS project, she should be able to
+clone, merge, or download its source and immediately start doing what she needs
+without renaming a bunch of files and methods or deleting spare parts. What I
+have works for a first release, but I just think there is a little too much here
+right now.</p>
+
+<p>I'd also like to see a simple generator. Nothing like Yeoman, as there already
+is one of those, but just something that allows the user to say "I want
+Bootstrap but not Font Awesome and my app is called 'coolApp'. Gimme." Perhaps a
+custom download builder like UI Bootstrap has. Like that. Then again, perhaps
+some Yeoman generators wouldn't be out of line. I don't know. What do you think?</p>
+
+<p>Naturally, I am open to all manner of ideas and suggestions. See the
+"Contributing" section below.</p>
 
 <h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<a name="to-do" class="anchor" href="#to-do"><span class="octicon octicon-link"></span></a>To Do</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/tsadykhov">tsadykhov</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+<p>See the <a href="http://github.com/joshdmiller/ng-boilerplate/issues">issues list</a>. And
+feel free to submit your own!</p>
+
+<h3>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h3>
+
+<p>This is an opinionated kickstarter, but the opinions are fluid and
+evidence-based. Don't like the way I did something? Think you know of a better
+way? Have an idea to make this more useful? Let me know! You can contact me
+through all the usual channels or you can open an issue on the GitHub page. If
+you're feeling ambitious, you can even submit a pull request - how thoughtful
+of you!</p>
+
+<p>So join the team! We're good people.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/tsadykhov/Research_Galaxy/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/tsadykhov/Research_Galaxy/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/tsadykhov/Research_Galaxy"></a> is maintained by <a href="https://github.com/tsadykhov">tsadykhov</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-45543296-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
   </body>
 </html>
