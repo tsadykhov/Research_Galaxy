@@ -12,7 +12,7 @@
  * The dependencies block here is also where component dependencies should be
  * specified, as shown below.
  */
-angular.module( 'researchGalaxy.home', [
+angular.module( 'researchGalaxy.projects', [
   'ui.router',
   'ui.bootstrap'
 ])
@@ -24,23 +24,23 @@ angular.module( 'researchGalaxy.home', [
  */
 .config(function config( $stateProvider ) {
   $stateProvider
-  .state( 'home', {
-    url: '/',
-    templateUrl: 'home/home.tpl.html',
-    data:{ pageTitle: 'Home' }
+  .state( 'projects', {
+    url: '/projects',
+    templateUrl: 'projects/projects.tpl.html',
+    data:{ pageTitle: 'Projects' }
   });
 })
 
 /**
  * And of course we define a controller for our route.
  */
-.controller ('ProjectCtrl', function ProjectsController($scope) {
+.controller ('ProjectSearchCtrl', function ProjectsController($scope) {
   $scope.projects = [
     {
       'name': 'Emma project 1',
       'description': 'My future wife',
       'imageUrl': 'http://images4.wikia.nocookie.net/__cb20130316163306/twobestfriendsplay/images/9/94/Emma_stone.jpg',//'images/test1.jpg'
-      'progress': 99
+      'progress': 98
     },
     {
       'name': 'Test project 2',

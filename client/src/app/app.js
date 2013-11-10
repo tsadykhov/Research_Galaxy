@@ -1,13 +1,14 @@
-angular.module( 'researchGalaxy', [
+var researchGalaxy = angular.module( 'researchGalaxy', [
   'templates-app',
   'templates-common',
   'researchGalaxy.home',
   'researchGalaxy.about',
+  'researchGalaxy.projects',
   'ui.router'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
-  $urlRouterProvider.otherwise( '/home' );
+  $urlRouterProvider.otherwise( '/' );
 })
 
 .run( function run () {
@@ -29,17 +30,40 @@ angular.module( 'researchGalaxy', [
   };
 })
 
+.directive("navbar", function(){
+  return{
+    restrict: 'AE',
+    transclude: true,
+    templateUrl: 'navbar/navbar.tpl.html'
+  };
+})
+
+.directive("jumbotron", function(){
+  return{
+    restrict: 'AE',
+    transclude: true,
+    templateUrl: 'jumbotron/jumbotron.tpl.html'
+  };
+})
+
 .directive("projectsSection", function(){
   return{
     restrict: 'AE',
-    templateUrl: 'directives/projects-section.tpl.html'
+    templateUrl: 'projects-section/projects-section.tpl.html'
   };
 })
 
 .directive("projectCard", function(){
   return{
     restrict: 'AE',
-    templateUrl: 'directives/project-card.tpl.html'
+    templateUrl: 'project-card/project-card.tpl.html'
+  };
+})
+
+.directive("progressBar", function(){
+  return {
+    restrict: 'E',
+    template: "<div class='progress-bar'><div></div></div>"
   };
 })
 
