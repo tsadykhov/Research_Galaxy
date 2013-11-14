@@ -2,8 +2,12 @@ var researchGalaxy = angular.module( 'researchGalaxy', [
   'templates-app',
   'templates-common',
   'researchGalaxy.home',
-  'researchGalaxy.about',
   'researchGalaxy.projects',
+  'researchGalaxy.members',
+  'researchGalaxy.about',
+  'researchGalaxy.create-project',
+  'researchGalaxy.log-in',
+  'researchGalaxy.sign-up',
   'ui.router'
 ])
 

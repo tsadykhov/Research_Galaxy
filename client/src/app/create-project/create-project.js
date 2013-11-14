@@ -1,17 +1,18 @@
-angular.module( 'researchGalaxy.about', [
+angular.module( 'researchGalaxy.create-project', [
   'ui.router',
   'placeholders',
   'ui.bootstrap'
 ])
 
 .config(function config( $stateProvider ) {
-  $stateProvider.state( 'about', {
-    url: '/about',
-    controller: 'AboutCtrl',
-    templateUrl: 'about/about.tpl.html',
-    data:{ pageTitle: 'What is It?' }
+  $stateProvider
+  .state( 'create-project', {
+    url: '/createproject',
+    templateUrl: 'create-project/create-project.tpl.html',
+    data:{ pageTitle: 'Create Project' }
   });
 })
+
 
 .controller( 'AboutCtrl', function AboutCtrl( $scope ) {
   // This is simple a demo for UI Boostrap.
