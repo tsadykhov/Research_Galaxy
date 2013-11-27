@@ -27,6 +27,7 @@ angular.module( 'researchGalaxy.projects', [
   .state( 'projects', {
     url: '/projects',
     templateUrl: 'projects/projects.tpl.html',
+    controller: 'ProjectsSearchCtrl',
     data:{ pageTitle: 'Projects' }
   });
 })
@@ -34,28 +35,55 @@ angular.module( 'researchGalaxy.projects', [
 /**
  * And of course we define a controller for our route.
  */
-.controller ('ProjectSearchCtrl', function ProjectsController($scope) {
-  $scope.projects = [
+.controller ('ProjectsSearchCtrl', function ProjectsController($scope) {
+  $scope.fields1 = [
     {
-      'name': 'Emma project 1',
-      'description': 'My future wife',
-      'imageUrl': 'http://images4.wikia.nocookie.net/__cb20130316163306/twobestfriendsplay/images/9/94/Emma_stone.jpg',//'images/test1.jpg'
-      'progress': 98
+      'name': 'Keyword',
+      'width': 3
     },
     {
-      'name': 'Test project 2',
-      'description': 'Test description'
+      'name': 'Title',
+      'width': 3
     },
     {
-      'name': 'Test project 3',
-      'description': 'Test description'
+      'name': 'Country',
+      'width': 3
     },
     {
-      'name': 'Test project 4',
-      'description': 'Test description'
+      'name': 'City',
+      'width': 3
+    },
+    {
+      'name': 'State',
+      'width': 3
+    },
+    {
+      'name': 'Zip',
+      'width': 3
+    }
+  ];
+  $scope.fields2 = [
+    {
+      'name': 'University',
+      'width': 5
+    },
+    {
+      'name': 'Area of Interest',
+      'width': 5
+    },
+    {
+      'name': 'Lead Researchers',
+      'width': 5
+    },
+    {
+      'name': 'Other Researchers',
+      'width': 5
+    },
+    {
+      'name': 'Project Goals',
+      'width': 5
     }
   ];
 })
 
 ;
-

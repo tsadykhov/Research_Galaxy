@@ -1,30 +1,34 @@
 <nav div-with-gutter class="navbar navbar-default navbar-fixed-top" role="navigation">
 
-        <div class="navbar-header">
+<!--         <div class="navbar-header col-md-1">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand active" ui-sref="home">RG</a>
-        </div>
+            <a class="navbar-brand active" ui-sref="home.default">RG</a>
+        </div> -->
     
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
+        <div class="collapse navbar-collapse navbar-ex1-collapse col-md-12">
+            <ul class="nav navbar-nav col-md-7">
+              <li><a ui-sref="home.default">RG</a></li>
               <li class=""><a ui-sref="projects">Projects</a></li>
               <li><a ui-sref="members">Members</a></li>
               <li><a ui-sref="about">About Us</a></li>
-              <li><a ui-sref="create-project">Create a Project</a></li>
+              <li><a ui-sref="create-project">New Project</a></li>
             </ul>
-            <form class="navbar-form navbar-left" role="search">
+<!--             <form class="navbar-form navbar-left col-md-2" role="search">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Find a Project">
               </div>
               <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
+            </form> -->
+            <ul class="nav navbar-nav col-md-2">
+              <li><a ui-sref="search">Search</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right col-md-3">
               <li><a ui-sref="log-in">Log In</a></li>
               <li><a ui-sref="sign-up">Sign Up</a></li>
             </ul>

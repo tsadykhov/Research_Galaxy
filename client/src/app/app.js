@@ -42,6 +42,20 @@ var researchGalaxy = angular.module( 'researchGalaxy', [
   };
 })
 
+.directive("footer", function(){
+  return{
+    restrict: 'AE',
+    templateUrl: 'footer/footer.tpl.html'
+  };
+})
+
+.directive("inputField", function(){
+  return{
+    restrict: 'AE',
+    templateUrl: 'directives/input-field.tpl.html'
+  };
+})
+
 .directive("jumbotron", function(){
   return{
     restrict: 'AE',

@@ -6,7 +6,7 @@
     <title ng-bind="pageTitle"></title>
 
     <!-- font awesome from BootstrapCDN -->
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+    <!-- <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet"> -->
 
     <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
     <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
@@ -15,9 +15,6 @@
   <body>
     <div navbar></div>
     <div ui-view></div>
-<!--     <div ui-view="jumbotron"></div>
-    <div ui-view="navbar"></div>
-    <div ui-view="editor-picks-projects"></div> -->
     <div footer></div>
     <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
     <script type="text/javascript" src="<%= file %>"></script><% }); %>

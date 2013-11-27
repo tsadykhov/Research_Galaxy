@@ -1,94 +1,20 @@
-<div div-with-gutter>
-  <div class="searchfilters">
-    <div class="container-center">
-      <div class="searchtitle">
-        <h3>Search Members</h3>
-        <a ui-sref="projects">Search Projects --></a>
-      </div> 
-      <div class="searchfilters-column">
-        <p>Keyword</p><input type="text" class="" placeholder="Search by Keyword">
-        <p>First Name</p><input type="text" class="" placeholder="Search by First Name">
-        <p>Last Name</p><input type="text" class="" placeholder="Search by Last Name">
-        <p>Country</p><input type="text" class="" placeholder="Search by Country">
-        <p>City</p><input type="text" class="" placeholder="Search by City">
-        <p>State</p><input type="text" class="" placeholder="Search by State (spelled out or abbr.)">
-      </div>
-      <div class="searchfilters-column sfcolumn-right">
-        <p>Zip</p><input type="text" class="" placeholder="Search by Zip">
-        <p>Email</p><input type="text" class="" placeholder="Search by Email">
-        <p>Phone</p><input type="text" class="" placeholder="Search by Phone #">
-        <p>Current University</p><input type="text" class="" placeholder="Search by their Current University">
-        <p>Current Institution</p><input type="text" class="" placeholder="Search by their Current Institution">
-        <p>Area of Interest</p><input type="text" class="" placeholder="Search by Area of Interest">
-      </div> 
+<div div-with-gutter class="member_search">
 
-    </div> 
-  </div> 
-  <div class="container-center">
-    <div class="memberlist">
+  <div class="search_section">
+    <div class="searchtitle">
+      <h3>Search Members</h3>
+      <a ui-sref="projects">Search Projects --></a>
     </div>
-  </div> 
-  <div>
-  <div class="memberinfo">
-    <div class="container-center">
-      <div class="membername">
-        <h1 id="membername">Member Name</h1>
-      </div>  
-      <div class="memberimage">
-      </div>
-      <div class="biography">
-        <h2>Biography</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.</p>
-        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, formas humanitatis per seacula quarta decima et quinta decima. </p>
-      </div>
-      <div class="memberstats">
-        <h2>Member Information</h2>
-        <div class="statstitles">
-          <h4>Country</h4>
-          <h4>City</h4>
-          <h4>State</h4>
-          <h4>Zip</h4>
-          <h4>Degree</h4>
-          <h4>University</h4>
-          <h4>Areas of Interest</h4>
-        </div> 
-        <div class="statsdata">
-          <h4 id="membercountry">Member Country</h4>
-          <h4 id="membercity">Member City</h4>
-          <h4 id="memberstate">Member State</h4>
-          <h4 id="memberzip">Member Zip</h4>
-          <h4 id="memberdegree">Member Degree</h4>
-          <h4 id="memberuniversity">Member University</h4>
-          <h4 id="memberaoi">Member Area of Interest 1, Area of Interest 2</h4>
-        </div>  
-      </div>
-      <div class="contactinformation">
-        <div class="contacttitles">
-          <h4>Email</h4>
-          <h4>Phone</h4>
-        </div>
-        <div class="contactdata">
-          <h4 id="memberemail">Member Email</h4>
-          <h4 id="memberphone">Member Phone</h4>
-        </div>  
-      </div> 
-    </div>
-  </div> 
-  <div class="container-center">
-    <div class="projectlists">
-      <div class="ownedprojects">
-        <h4>Projects Member owns</h4>
-        <div class="nomemberprojects">
-          <h5>No owned projects :(</h5>
-        </div>
-      </div>
-      <div class="contibutedprojects">
-        <h4>Projects Member has contributed to</h4>
-        <div class="nomemberprojects">
-          <h5>No projects contributed to :(</h5>
-        </div>
-      </div>
-    </div>
-  </div> 
+    <form class="form-horizontal col-md-6" role="form">
+      <div input-field ng-repeat="field in fields1"></div>
+    </form>
+    <form class="form-horizontal col-md-6" role="form">
+      <div input-field ng-repeat="field in fields2"></div>
+    </form>
   </div>
+
+  <div class="search_results_section">
+    <h3> Search Results </h3>
+  </div> 
+  
 </div>

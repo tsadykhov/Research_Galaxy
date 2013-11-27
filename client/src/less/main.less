@@ -35,16 +35,11 @@
 
 
 /**
- * Site gutters
- */
-
-
-/**
  * Typography
  */
 
 @import url(http://fonts.googleapis.com/css?family=Raleway:100,200,300);
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/* @import url(http://weloveiconfonts.com/api/?family=fontawesome); TIMUR */
 @import url(http://fonts.googleapis.com/css?family=Abel);
 @import url(http://fonts.googleapis.com/css?family=Lora);
 
@@ -81,41 +76,6 @@ h2 {
 }
 
 
-/**
- * Footer
- */
-
-.footer {
-  margin-top: 80px;
-
-  .footer-inner {
-    padding: 40px 0;
-    border-top: 1px solid #DDD;
-  }
-
-  .social {
-    float: right;
-    margin: 0;
-    list-style: none;
-
-    li {
-      float: left;
-      margin-left: 20px;
-
-      a, a:visited {
-        //color: @grayLight;
-        text-decoration: none;
-        font-size: 40px;
-        .transition( 250ms ease-in-out );
-
-        &:hover {
-          color: @gray;
-        }
-      }
-    }
-  }
-}
-
 
 /**
  * Now that all app-wide styles have been applied, we can load the styles for
@@ -124,8 +84,11 @@ h2 {
  * TODO: In a later version of this boilerplate, I'd like to automate this.
  */
 
+@import '../app/home/home.less';
 @import '../app/jumbotron/jumbotron.less';
 @import '../app/navbar/navbar.less';
+@import '../app/footer/footer.less';
+@import '../app/projects/projects.less';
 @import '../app/projects-section/projects-section.less';
 @import '../app/project-card/project-card.less';
 

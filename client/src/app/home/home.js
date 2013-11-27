@@ -25,34 +25,85 @@ angular.module( 'researchGalaxy.home', [
 .config(function config( $stateProvider ) {
   $stateProvider
   .state( 'home', {
-    url: '/',
     templateUrl: 'home/home.tpl.html',
     data:{ pageTitle: 'Home' }
+  })
+  .state( 'home.default', {
+    url: '/',
+    views: {
+      "editor-picks@home": {
+        templateUrl: 'projects-section/projects-section.tpl.html',
+        controller: 'EditorPicksProjectCtrl'
+      },
+      "popular@home": {
+        templateUrl: 'projects-section/projects-section.tpl.html',
+        controller: 'PopularProjectCtrl'
+      },
+      "recent@home": {
+        templateUrl: 'projects-section/projects-section.tpl.html',
+        controller: 'RecentProjectCtrl'
+      }
+    }
   });
 })
 
 /**
  * And of course we define a controller for our route.
  */
-.controller ('ProjectCtrl', function ProjectsController($scope) {
+.controller ('EditorPicksProjectCtrl', function EditorPicksProjectCtrl($scope) {
+  $http.get('projects/editor-picks.json'.success(function(data) {
+    $scope.projects = data;
+  }
+})
+
+.controller ('PopularProjectCtrl', function PopularProjectCtrl($scope) {
+  $scope.projects = [
+    {
+      'name': 'Emma 1',
+      'description': 'My future wife',
+      // 'imageUrl': 'http://images4.wikia.nocookie.net/__cb20130316163306/twobestfriendsplay/images/9/94/Emma_stone.jpg',//'images/test1.jpg'
+      'progress': 80
+    },
+    {
+      'name': 'Test project 2',
+      'description': 'Test description',
+      'progress': 60
+    },
+    {
+      'name': 'Test project 3',
+      'description': 'Test description',
+      'progress': 40
+    },
+    {
+      'name': 'Test project 4',
+      'description': 'Test description',
+      'progress': 20
+    }
+  ];
+})
+
+.controller ('RecentProjectCtrl', function RecentProjectCtrl($scope) {
   $scope.projects = [
     {
       'name': 'Emma project 1',
       'description': 'My future wife',
-      'imageUrl': 'http://images4.wikia.nocookie.net/__cb20130316163306/twobestfriendsplay/images/9/94/Emma_stone.jpg',//'images/test1.jpg'
+      // 'imageUrl': 'http://images4.wikia.nocookie.net/__cb20130316163306/twobestfriendsplay/images/9/94/Emma_stone.jpg',//'images/test1.jpg'
       'progress': 99
     },
     {
       'name': 'Test project 2',
-      'description': 'Test description'
+      'description': 'Test description',
+      'progress': 0
     },
     {
       'name': 'Test project 3',
-      'description': 'Test description'
+      'description': 'Test description',
+      'progress': 0
     },
     {
       'name': 'Test project 4',
-      'description': 'Test description'
+      'description': 'Test description',
+      'progress': 0
     }
   ];
 })
